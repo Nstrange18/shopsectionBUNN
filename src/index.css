@@ -1,0 +1,134 @@
+@import "tailwindcss";
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css" layer(utilities);
+
+@layer theme, base, components, utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral.otf") format("opentype");
+  font-weight: 300 400 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral-Medium.otf") format("opentype");
+  font-weight: 500 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral-Semibold.otf") format("opentype");
+  font-weight: 600 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral-Bold.otf") format("opentype");
+  font-weight: 700 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral-ExtraBold.otf") format("opentype");
+  font-weight: 800 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Integral CF";
+  src: url("./fonts/Integral-Heavy.otf") format("opentype");
+  font-weight: 900 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Light.otf") format("opentype");
+  font-weight: 200 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Regular.otf") format("opentype");
+  font-weight: 300 400 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Medium.otf") format("opentype");
+  font-weight: 500 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Bold.otf") format("opentype");
+  font-weight: 600 ;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("./fonts/Satoshi-Black.otf") format("opentype");
+  font-weight: 700 ;
+  font-display: swap;
+}
+
+
+
+
+:root {
+  font-family: "Satoshi", sans-serif;
+
+}
+
+@theme {
+  --font-Satoshi: "Satoshi", sans-serif;
+  --font-Integral: "Integral CF", sans-serif;
+  --color-cherry-pink: #F0EEED;
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  
+  h2 {
+    @apply text-3xl font-semibold;
+  }
+  
+  h3 {
+    @apply text-2xl font-medium;
+  }
+  
+  h4 {
+    @apply text-xl font-medium;
+  }
+  
+  h5{
+    @apply text-lg font-bold;
+  }
+  
+  h6 {
+    @apply text-base font-bold;
+  }
+  
+  p {
+    @apply text-base font-normal;
+  }
+}
