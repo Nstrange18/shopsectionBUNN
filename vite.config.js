@@ -10,4 +10,3 @@ export default defineConfig({
   ],
   base: 'https://github.com/Nstrange18/shopsectionBUNN.git'
 })
-
