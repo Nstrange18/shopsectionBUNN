@@ -1,8 +1,4 @@
 {
-  "name": "figma-designbunn",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "homepage": "https://github.com/Nstrange18/shopsectionBUNN.git",
   "scripts": {
     "dev": "vite",
@@ -10,6 +6,12 @@
     "preview": "vite preview",
     "deploy": "vite build && gh-pages -d dist"
   },
+  
+  "name": "figma-designbunn",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
     "axios": "^1.7.9",
