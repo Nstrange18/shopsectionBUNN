@@ -7,7 +7,7 @@ function App() {
     <div>
       <header className="flex gap-8 !p-4 !ml-25 items-center">
         <div>
-          <img src="public/Icons/SHOP.CO.png" className=" w-40 h-5" />
+          <img src="./public/Images/SHOP.CO.png" className=" w-40 h-5" />
         </div>
 
         <nav className="flex gap-7 text-gray-600 text-xs p-7">
