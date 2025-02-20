@@ -1,5 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 
+
 export default function ProductCard({ image, title, price }) {
   return (
     <div className="w-full h-70 flex flex-col gap-1">

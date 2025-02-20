@@ -3,7 +3,6 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-
   "homepage": "https://github.com/Nstrange18/shopsectionBUNN.git",
   "scripts": {
     "dev": "vite",
