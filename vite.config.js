@@ -7,6 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-  ],
-  base: 'https://github.com/Nstrange18/shopsectionBUNN.git'
+  ]
 })
