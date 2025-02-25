@@ -1,10 +1,9 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 
-
 export default function ProductCard({ image, title, price }) {
   return (
-    <div className="w-full h-70 flex flex-col gap-1">
-      <div className="w-full h-{80%} bg-cherry-pink flex items-center justify-center rounded-lg overflow-hidden">
+    <div className="w-full h-80 flex flex-col gap-1">
+      <div className="w-full h-{90%} bg-cherry-pink flex items-center justify-center rounded-lg overflow-hidden">
         <img
           src={image}
           alt={title}

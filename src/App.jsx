@@ -1,7 +1,7 @@
 import ProductCard from "./components/ProductCard";
 
 function App() {
-  const baseUrl = "https://fakestoreapi.com/";
+  // const baseUrl = "https://fakestoreapi.com/";
 
   return (
     <div>
@@ -66,11 +66,20 @@ function App() {
 
       <div className="w-260 h-0.5 bg-gray-100 !ml-30"></div>
 
-      <p className="text-gray-500 text-xs !ml-43 !mt-3 !p-1 ">
-        Home > <b>Casual</b>
-      </p>
-      <main className="w-full h-screen flex flex-col !mb-30 items-end relative">
-        <aside className="!ml-30 !mt-6 border border-gray-300 w-70 h-200 rounded-2xl absolute left-13">
+      <div className="flex gap-2 justify-center align-center !mr-200 !mt-3">
+        <p className="text-gray-500 text-sm flex gap-1">
+          Home
+          <img
+            src="./public/Images/arrow-right.png"
+            alt=""
+            className="w-3 h-3 !mt-1"
+          />
+          <b className="text-black">Casual</b>
+        </p>
+      </div>
+
+      <main className="w-full min-h-full flex flex-col items-end relative">
+        <aside className="!ml-30 !mt-6 border border-gray-300 w-70 h-270 rounded-2xl absolute left-13">
           <div className="!p-4">
             <div className="flex gap-40">
               <h3 className="text-xl">Filters</h3>
@@ -87,49 +96,51 @@ function App() {
             <div className="flex justify-between text-sm text-gray-400 !mt-3">
               <p>T-shirts</p>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5kDQV5KACPIGgkKIQbFCA9tjVwzpDSbwew&shttps://i.pinimg.com/736x/cb/f6/bf/cbf6bf908e789a4affe50c1ad2554782.jpg"
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
                 alt=""
-                width={20}
-                height={10}
+                className="w-5 h-5"
               />
             </div>
 
             <div className="flex justify-between text-sm text-gray-400 !mt-3">
               <p>Shorts</p>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5kDQV5KACPIGgkKIQbFCA9tjVwzpDSbwew&shttps://i.pinimg.com/736x/cb/f6/bf/cbf6bf908e789a4affe50c1ad2554782.jpg"
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
                 alt=""
-                width={20}
-                height={10}
+                className="w-5 h-5 bg-white"
               />
             </div>
 
             <div className="flex justify-between text-sm text-gray-400 !mt-3">
               <p>Shirts</p>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5kDQV5KACPIGgkKIQbFCA9tjVwzpDSbwew&shttps://i.pinimg.com/736x/cb/f6/bf/cbf6bf908e789a4affe50c1ad2554782.jpg"
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
                 alt=""
-                width={20}
-                height={10}
+                className="w-5 h-5"
               />
             </div>
 
             <div className="flex justify-between text-sm text-gray-400 !mt-3">
               <p>Hoodie</p>
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRk5kDQV5KACPIGgkKIQbFCA9tjVwzpDSbwew&shttps://i.pinimg.com/736x/cb/f6/bf/cbf6bf908e789a4affe50c1ad2554782.jpg"
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
                 alt=""
-                width={20}
-                height={10}
+                className="w-5 h-5"
               />
             </div>
           </div>
 
           <div className="w-60 h-0.5 bg-gray-100 !mt-3 !ml-3.5"></div>
 
-          <div className="flex gap-52 items-center text-xl text-black-400 !mt-3 !ml-2">
+          <div className="flex gap-50 items-center text-xl text-black-400 !mt-3 !ml-2">
             <p>Price</p>
-            <p> ∧ </p>
+            <p>
+              <img
+                src="https://www.freeiconspng.com/thumbs/up-arrow-png/up-arrow-png-8.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </p>
           </div>
 
           <div>
@@ -142,9 +153,15 @@ function App() {
 
           <div className="w-60 h-0.5 bg-gray-100 !mt-3 !ml-3.5"></div>
 
-          <div className="flex gap-50 items-center text-xl text-black-400 !mt-4 !ml-2">
+          <div className="flex gap-46 items-center text-xl text-black-400 !mt-4 !ml-2">
             <p>Colours</p>
-            <p> ∧ </p>
+            <p>
+              <img
+                src="https://www.freeiconspng.com/thumbs/up-arrow-png/up-arrow-png-8.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </p>
           </div>
 
           <div className="grid grid-cols-5 gap-1 !p-4">
@@ -162,25 +179,123 @@ function App() {
 
           <div className="w-60 h-0.5 bg-gray-100 !mt-3 !ml-3.5"></div>
 
-          <img
-            src="./public/Images/Size.png"
-            alt="Size"
-            className="!p-2 w-60 !ml-3"
-          />
+          <section>
+            <p className="flex justify-between !p-4 items-center">
+              Size
+              <img
+                src="https://www.freeiconspng.com/thumbs/up-arrow-png/up-arrow-png-8.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </p>
+
+            <span className="!ml-4 relative h-8">
+              <button className="cursor-pointer absolute !p-2 w-23 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                XX-small
+              </button>
+              <button className="cursor-pointer absolute left-26 !p-2 w-20 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                X-small
+              </button>
+              <button className="cursor-pointer absolute top-10 !p-2 w-20 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                Small
+              </button>
+              <button className="cursor-pointer absolute top-10 left-22 !p-2 w-20 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                Medium
+              </button>
+              <button className="cursor-pointer absolute top-20 !p-2 w-20 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out ">
+                Large
+              </button>
+              <button className="cursor-pointer absolute top-20 left-22 !p-2 w-20 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                X-Large
+              </button>
+              <button className="cursor-pointer absolute top-30 !p-2 w-24 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out ">
+                XX-Large
+              </button>
+              <button className="cursor-pointer absolute top-30 left-27 !p-2 w-20 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                3X-Large
+              </button>
+              <button className="cursor-pointer absolute top-40 !p-2 w-24 rounded-3xl border-none bg-gray-200 text-gray-600 text-sm  focus:bg-black focus:text-white transition-all duration-700 ease-in-out">
+                4X-small
+              </button>
+            </span>
+          </section>
+
+          <div className="w-60 h-0.5 bg-gray-100 !mt-50 !ml-3.5"></div>
+
+          <section className="!p-3">
+            <p className="flex justify-between items-center">
+              Dress Style
+              <img
+                src="https://www.freeiconspng.com/thumbs/up-arrow-png/up-arrow-png-8.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </p>
+
+            <div className="flex justify-between text-sm text-gray-400 !mt-3">
+              <p>Casual</p>
+              <img
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </div>
+
+            <div className="flex justify-between text-sm text-gray-400 !mt-3">
+              <p>Formal</p>
+              <img
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
+                alt=""
+                className="w-5 h-5 bg-white"
+              />
+            </div>
+
+            <div className="flex justify-between text-sm text-gray-400 !mt-3">
+              <p>Party</p>
+              <img
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </div>
+
+            <div className="flex justify-between text-sm text-gray-400 !mt-3">
+              <p>Gym</p>
+              <img
+                src="https://www.transparentpng.com/thumb/arrow/right-grey-arrow-icon-png-20.png"
+                alt=""
+                className="w-5 h-5"
+              />
+            </div>
+          </section>
+
+          <span>
+            <button className="cursor-pointer w-60 flex justify-center bg-black text-white !p-2 rounded-3xl !ml-4.5 !mt-2">
+              Apply Filter
+            </button>
+          </span>
         </aside>
 
-        <div className="flex items-center gap-5 !mr-28 !mt-2 !mb-">
+        <div className="flex items-center gap-5 !mr-28 !mt-2">
           <div>
             <h1 className="text-2xl !mr-55">Casual</h1>
           </div>
 
           <p className="text-xs text-gray-400">Showing 1-10 of 100 Products </p>
-          <p className="text-xs text-gray-400">
-            Sort by: <b className="text-black">Most Popular ∨ </b>
-          </p>
+
+          <div className="flex gap-1 align-center">
+            <p className="text-xs text-gray-400">
+              Sort by: <b className="text-black">Most Popular</b>
+            </p>
+            <img
+              src="https://www.iconpacks.net/icons/2/free-arrow-down-icon-3101-thumb.png"
+              alt=""
+              className="w-3 h-3 !mt-0.5"
+            />
+          </div>
         </div>
 
-        <section className="w-full max-w-2xl grid grid-cols-3 gap-6 mx-auto !p-4 !mr-21">
+        <section className="w-full max-w-2xl grid grid-cols-3 gap-3 mx-auto !p-3 !mr-21">
           <ProductCard
             image="https://static.vecteezy.com/system/resources/previews/050/591/151/non_2x/bright-blue-t-shirt-folded-neatly-on-a-transparent-background-free-png.png"
             title="Blue Shirt XL"
@@ -236,9 +351,56 @@ function App() {
           />
         </section>
 
-        <div className="w-60 h-0.5 bg-gray-100 !mt-3 !ml-3.5"></div>
+        <section>
+          <div className="w-160 h-0.5 bg-gray-300 !mr-28"></div>
 
-        <img src="./public/Images/number.png" alt="" />
+          <span className="flex !p-3 justify-between">
+
+            <button className="cursor-pointer w-30 flex justify-center border-1 border-gray-300 gap-2 text-black text-xs !p-2 rounded-lg !mr-28 !mb-20">
+              <img
+                src="./public/Images/arrow-left.png"
+                alt="arrow-left-with-shaft"
+                className="w-3 h-3 !mt-0.99"
+              />
+              Previous
+            </button>
+
+            <span className="flex gap-2 items-center !mb-20 !mr-30">
+              <button>
+                <img
+                  src="https://icons.veryicon.com/png/o/miscellaneous/arrows/double-arrow-left-2.png"
+                  alt="double-arrow-left"
+                  className="w-5 h-5 cursor-pointer border-gray-500 border-1 rounded-sm bg-gray-400"
+                />
+              </button>
+
+              <h4>1</h4>
+
+              <button>
+                <img
+                  src="https://icons.veryicon.com/png/o/miscellaneous/ui-basic-linear-icon/double-arrow-right-1-2.png"
+                  alt="double-arrow-right"
+                  className="w-5.5 h-5.5 !p-1 cursor-pointer border-gray-500 border-1 rounded-sm bg-gray-400"
+                />
+              </button>
+              
+            </span>
+
+            
+            <button className="cursor-pointer w-30 flex justify-center border-1 border-gray-300 gap-2 text-black text-xs !p-2 rounded-lg !mr-28 !mb-20">
+              Next
+              <img
+                src="./public/Images/arrow-right-shaft.png"
+                alt="arrow-left-with-shaft"
+                className="w-3 h-3 !mt-1"
+              />
+            </button>
+
+
+          </span>
+
+
+        </section>
       </main>
     </div>
   );
