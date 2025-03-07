@@ -45,7 +45,7 @@ function App() {
           <img
             src="https://icons.veryicon.com/png/o/miscellaneous/simple-linear-icon-library/search-316.png"
             alt="search icon"
-            className="absolute left-100 top-1/4  w-5 h-5 pointer-events-none"
+            className="absolute left-100 top-1/4  w-5 h-5 cursor-pointer"
           />
         </div>
 
@@ -399,9 +399,21 @@ function App() {
 
           </span>
 
-
         </section>
       </main>
+
+      <footer className="bg-gray-300 min-h-100 relative !mt-30">
+        <section className="absolute bg-black rounded-2xl w-270 h-40 left-28 bottom-80">
+          <span className="align-left flex">
+            <h1 className="text-white !p-7 w-130">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
+
+            <span className="!ml-50 !mt-4 inline w-100">
+              <input type="email" placeholder="Enter your email address" className="!p-2 bg-white text-gray-900 rounded-4xl w-70 h-10 !mt-4 text-xs"/>
+              <button className="bg-white rounded-4xl text-xs !p-2 w-70 h-10 !mt-3 cursor-pointer">Suscribe to Newsletter</button>
+            </span>
+          </span>
+        </section>
+      </footer>
     </div>
   );
 }

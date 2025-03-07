@@ -9,7 +9,7 @@ export default function ProductCard({ image, title, price }) {
           alt={title}
           title={title}
           aria-labelledby={title}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover hover:border-gray-600 hover:border-2 cursor-pointer"
           loading="lazy"
         />
       </div>
